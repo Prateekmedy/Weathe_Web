@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Weather</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--Latest Font-Awesome Css-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<script src="https://use.fontawesome.com/aec41715d9.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<script type="text/javascript" src="js/javascript.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Playball|Racing+Sans+One" rel="stylesheet">
+
+<style>
+#back{
+ content: "";
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: -1;
+   top:0;
+   background-image: url('images/city_night_cathedral_sky_view_from_top_russia_moscow_47874_1920x1080.jpg');
+   background-position: bottom;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;  
+   height: 100%;
+  
+   -webkit-filter: blur(3px);
+   
+	
+}
+#heading{
+	color: #fff;
+	text-align: center;
+	font-family: Dancing Script;
+	font-size: 3.5em;
+	margin-top: 20px;
+	margin-bottom: 100px;
+	font-weight: bold;
+	font-style: italic;
+}
+#cityBlock{
+	background-color: rgba(0, 0, 0, 0.4);
+
+	margin-bottom: 3px;
+}
+#tempBlock{
+	background-color: rgba(0, 0, 0, 0.4);
+
+}
+#climateBlock{
+	background-color: rgba(0, 0, 0, 0.4);
+
+}
+#restBlock{
+	background-color: rgba(0, 0, 0, 0.4);
+	
+	margin-top: 3px;
+}
+.social-icons:hover .fa-free-code-camp:before{
+    color:#fff;
+    border:2px solid;
+    border-color:#33691E;
+    padding:6px;
+    background-color:#33691E;
+    border-radius:10%;
+    transition: .2s ease-in;
+  }
+  #footer{
+  	background-color: rgba(0, 0, 0, 0.4);
+  }
+  .footer {
+  	margin-top: 200px;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#city{
+	color: #fff;
+	font-size: 4.5em;
+	font-family: Dancing Script;
+	text-align: center;
+}
+#temp{
+	color: #fff;
+	font-size: 6em;
+	font-family: Dancing Script;
+	text-align: center;
+	vertical-align: center;
+	padding:2px;
+}
+#climateDesc{
+	color: #fff;
+	font-size: 2.5em;
+	font-family: Dancing Script;
+	text-align: center;
+}
+#otherClimate{
+	color: #fff;
+	font-size: 1.8em;
+	font-family: Dancing Script;
+	padding-top:2px;
+	
+}
+
+</style>
+</head>
+<body>
+	<div class="container-fluid" id="back">
+	</div>
+	<div id="heading">Hey , Enjoy <strong id="weather"></strong> Climate</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-offset-4 col-sm-offset-4 col-xs-offset-4 col-md-4 col-sm-4 col-xs-4" id="cityBlock">
+				<p id="city"></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-4 col-sm-offset-4 col-xs-offset-4 col-md-4 col-sm-4 col-xs-4" id="tempBlock">
+				<p id="temp"></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-4 col-sm-offset-4 col-xs-offset-4 col-md-4 col-sm-4 col-xs-4" id="climateBlock">
+				<img id="icon" src=""><p id="climateDesc"></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-4 col-sm-offset-4 col-xs-offset-4 col-md-4 col-sm-4 col-xs-4" id="restBlock">
+				<div id="otherClimate">
+					<p id="pressure"></p>
+					<p id="humidity"></p>
+					<p id="wind"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+  <div class=" footer container-fluid text-center" id="footer">
+    <h3 style="font-family:Courgette,cursive;color: #fff;font-size: 1.3em"><strong>About this page</strong></h3>
+    <p style="font-family:DancingScript;font-size:1em;color: #fff">Design & Coded by Prateek Patel (^!^)...</p><a href="https://www.freecodecamp.com/prateekmedy" id="copyright" class="social-icons"><i class="fa fa-free-code-camp" aria-hidden="true" style="font-size:20px;color:#fff;padding-bottom: 20px"> Free-CodeCamp</i></a>
+  </div> 
+
+</body>
+</html>
